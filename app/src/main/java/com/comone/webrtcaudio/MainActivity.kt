@@ -192,6 +192,7 @@ class MainActivity : AppCompatActivity() {
         super.onPause()
         audioUtils.nsxFree(nsxInst)
         audioUtils.agcFree(agcInst)
+        audioUtils.aecmFree(aecmInst)
         _stopReplay()
     }
 
